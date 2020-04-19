@@ -1,4 +1,17 @@
 console.log(typeof("hi"));
 
-ReactDom.render(<h1>hello</h1>, document.getElementById("root"));
+class MyApp extends React.Component {
+    constructor(props) {
+        super(props);
+    }
+    render() {
+        return (
+            <div>
+                <h1 >Hello</h1>
+                <p>Hi</p>
+            </div>
+        )
+    }   
+}
 
+ReactDOM.render(<MyApp />, document.getElementById("root"));
